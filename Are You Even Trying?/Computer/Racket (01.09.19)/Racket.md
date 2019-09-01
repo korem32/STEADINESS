@@ -4,9 +4,9 @@ for whom the Racket tutorial needed for, Click this link: https://docs.racket-la
 
 [Purpose]
 
-__1. I've been learning this program for PL class.
+1. I've been learning this program for PL class.
 
-__2. And I wanted to know what the PL course academically mean, and why we should know more about that subject is.
+2. And I wanted to know what the PL course academically mean, and why we should know more about that subject is.
 
 
 [목차]
