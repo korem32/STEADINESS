@@ -221,7 +221,7 @@ ex)
 > (and (zero? (/ 1 0) (< 2 1)))
 . . /: division by zero [error]
 
-__We can learn the lesson from above codes, 
+__We can learn the lesson from above codes,__
 
 __1. (zero? (/ 1 0) ==> this cannot be divied by zero__
 
