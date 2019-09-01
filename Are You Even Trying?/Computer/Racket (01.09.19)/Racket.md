@@ -1,6 +1,6 @@
 # Racket 
 
-> for whom the Racket tutorial needed for, Click this link: https://docs.racket-lang.org/plait/index.html
+> for whom the Racket tutorial needed for, Click this link: https://docs.racket-lang.org/plait/index.html .
 > All the data below are referenced from:  https://docs.racket-lang.org/plait/index.html
 
 [Purpose]
