@@ -227,6 +227,46 @@ __1. (zero? (/ 1 0) ==> this cannot be divied by zero__
 
 __2. even thought that, the result was #f (false), but why? because 'and' is a function to return the false if there's false statement like (and (< 2 1)). because first argument is arleady false, so rest of statement doesn't need to be checked__
 
+### 1.5 Lists
+
+-Plait lists are uniform, meaning that all of the elements of a list must have the same type. The list form creates a list:
+
+ex)
+
+> (list 1 2 (+ 3 4))
+- (Listof Number)
+
+'(1 2 7)
+
+> (list (string-append "a" "b") "c")
+- (Listof String)
+
+'("ab" "c")
+
+- The cons function takes an element and a list and “adds” the element to the front of the list, creating a new list with all of the elements:
+
+ex)
+
+> (cons 1 '(2 3))
+- (Listof Number)
+
+'(1 2 3)
+
+> (cons "apple" '("banana"))
+- (Listof String)
+
+'("apple" "banana")
+
+__*how to read?__
+
+__Symbol: milk__
+
+__String: "milk"__
+
+__number: 1__
+
+###
+
 ## Something still confused when you studying this PGM.
 
 
