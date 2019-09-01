@@ -165,7 +165,54 @@ ex)
 - Number
 3
 
+-The and and or forms are short-cicuiting, too, and they work with any number of boolean subexpressions: (Finding True)
 
+ex)
+
+> (and #t #t)
+- Boolean
+
+#t
+
+> (and #t #f)
+- Boolean
+
+#f
+
+> (and (< 2 1) #t)
+- Boolean
+
+#f
+
+> (and (< 2 1) (zero? (/ 1 0))) ; second expression is not evaluated
+- Boolean
+
+#f
+
+> (or #f #t)
+- Boolean
+
+#t
+
+> (or #f #f)
+- Boolean
+
+#f
+
+> (or (< 1 2) (zero? (/ 1 0))) ; second expression is not evaluated
+- Boolean
+
+#t
+
+> (and #t #t #t #t)
+- Boolean
+
+#t
+
+> (or #f #f #f)
+- Boolean
+
+#f
 
 
 
