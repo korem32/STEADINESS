@@ -1,32 +1,23 @@
-# 폴더 개요 ( 2019. 09. 01)
+# Racket 
 
-[목적]
+for whom the Racket tutorial needed for, Click this link: https://docs.racket-lang.org/plait/index.html
 
-__1. 많은 언어를 배우는 것은 나의 창의성에 많은 도움이 된다.__
+[Purpose]
 
-__2. 다양한 창의적 기법이나, 아이디어를 통해서 세상 문제들을 해결한다.__
+__1. I've been learning this program for PL class.
 
-__3. 언어의 유창성을 제외하고, 그 언어를 통해서 바라볼 수 있는 그 나라의 문화적 요소들을 파악해보자.__
+__2. And I wanted to know what the PL course academically mean, and why we should know more about that subject is.
+
 
 [목차]
 
-## 1. 인간 언어
+## Something new you got from learning how to used this PGM.
 
-### 제 1 언어: 한국어 (Native)
-### 제 2 언어: 영어 (Intermediate High)
-### 제 3 언어: 중국어 (Beginner)
-### 제 4 언어: 일본어 (Beginner)
-————————————————
-### 배우고 싶은 언어: 스페니쉬,
+1. 
 
 
-## 2. 컴퓨터 언어
+## Something still confused when you studying this PGM.
 
-### 제 1 언어: C  
-### 제 2 언어: C+
-### 제 3 언어: Java
-### 제 4 언어: Rocket
-———————————————
-### 배우고 싶은 언어: HTML, JavaScript, Python, R 등 
+
 
 
