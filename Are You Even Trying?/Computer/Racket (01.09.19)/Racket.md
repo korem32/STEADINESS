@@ -214,7 +214,17 @@ ex)
 
 #f
 
+*** > (or (< 2 1) (zero? (/ 1 0)))
+. . /: division by zero [error]
+> (and (< 2 1) (zero? (/ 1 0)))
+#f
+> (and (zero? (/ 1 0) (< 2 1)))
+. . /: division by zero [error]
 
+__We can learn the lesson from above codes, 
+
+__1. (zero? (/ 1 0) ==> this cannot be divied by zero__
+__2. even thought that, the result was #f (false), but why? because 'and' is a function to return the false if there's false statement like (and (< 2 1)). because first argument is arleady false, so rest of statement doesn't need to be checked.
 
 ## Something still confused when you studying this PGM.
 
