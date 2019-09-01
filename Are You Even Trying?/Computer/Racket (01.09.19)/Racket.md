@@ -265,6 +265,35 @@ __String: "milk"__
 
 __number: 1__
 
+- The expression '(1 2 (+ 3 4)) fails because that’s the same as (list 1 2 '(+ 3 4)), and '(+ 3 4) fails because it’s the same as (list '+ 3 4), but a list cannot mix a symbol with numbers.
+
+-The cons operation is constant-time, because a list is internally represented as a singly linked list, and cons simply creates a new cell that contains the new value and then points to the existing list.
+
+ex)
+
+> (cons 1 '(2 3))
+- (Listof Number)
+
+'(1 2 3)
+
+> (cons "apple" '("banana"))
+- (Listof String)
+
+'("apple" "banana")
+
+-__Don’t confuse cons and append. The cons function takes an element and a list, while append takes a list and a list. That difference is reflected in their types:
+
+ex)
+
+> (append '(1 2) '(3 4))
+- (Listof Number)
+
+'(1 2 3 4)
+
+
+
+
+
 ###
 
 ## Something still confused when you studying this PGM.
