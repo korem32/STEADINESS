@@ -6,6 +6,8 @@
 
 __1. Reading English__
 
+- Read again and again before that article will be understandable.
+- 
 -
--
--
+
+
