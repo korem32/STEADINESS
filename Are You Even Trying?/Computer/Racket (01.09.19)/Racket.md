@@ -281,7 +281,7 @@ ex)
 
 '("apple" "banana")
 
--__Don’t confuse cons and append. The cons function takes an element and a list, while append takes a list and a list. That difference is reflected in their types:
+-__Don’t confuse cons and append. The cons function takes an element and a list, while append takes a list and a list. That difference is reflected in their types:__
 
 ex)
 
@@ -290,7 +290,96 @@ ex)
 
 '(1 2 3 4)
 
+-The empty list is so useful that it has a name: empty. Although the list form may seem fundamental, the true list-construction primitives are empty and cons, and you can build up any other list using those:
 
+ex)
+
+> empty
+- (Listof 'a)
+
+'()
+
+> (cons "food" empty)
+- (Listof String)
+
+__;empty '()__
+
+__;that is, put the element ("food") into empty(list -> '())__
+
+'("food")
+
+> (cons "dog" (cons "food" empty))
+- (Listof String)
+
+'("dog" "food")
+
+-The empty? function determines whether a list is empty, and cons? determines whether a list has at least one item:
+
+ex)
+
+> (empty? empty)
+- Boolean
+
+#t
+
+> (empty? '())
+- Boolean
+
+#t
+
+> (cons? (cons 1 '()))
+- Boolean
+
+#t
+
+> (cons? '(1))
+- Boolean
+
+#t
+
+> (cons? empty)
+- Boolean
+
+#f
+
+> (empty? '(1))
+- Boolean
+
+#f
+
+-The cons operation constructs a new value from two pieces. The first and rest operations are the opposite of cons. Given a value produced by cons, first returns the item that cons added to the start of the list, and rest returns the list that cons added to. More generally, first gets the first item from a list, and rest gets everything list in the list when the first argument is removed.
+
+ex)
+
+> (first (cons 1 '(2 3)))
+- Number
+
+1
+
+> (rest (cons 1 '(2 3)))
+- (Listof Number)
+
+'(2 3)
+
+> (first '("apple" "banana" "coconut"))
+- String
+
+"apple"
+
+> (rest '("apple" "banana" "coconut"))
+- (Listof String)
+
+'("banana" "coconut")
+
+> (first (rest '("apple" "banana" "coconut")))
+- String
+
+"banana"
+
+> (rest (rest '("apple" "banana" "coconut")))
+- (Listof String)
+
+'("coconut")
 
 
 
