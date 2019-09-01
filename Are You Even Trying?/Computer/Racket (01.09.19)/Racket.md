@@ -9,7 +9,6 @@
 
 2. And I wanted to know what the PL course academically mean, and why we should know more about that subject is.
 
-3. 
 
 [목차]
 
