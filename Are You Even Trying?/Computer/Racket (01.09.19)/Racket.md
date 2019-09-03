@@ -382,6 +382,26 @@ ex)
 '("coconut")
 
 
+### 1.6 Definitions
+
+The define form defines an identifier to be a synonym for a value:
+
+ex)
+
+> (define pi 3.14)
+> pi
+- Number
+
+3.14
+
+> (define tau (+ pi pi))
+> tau
+- Number
+
+6.28
+
+
+
 
 ###
 
