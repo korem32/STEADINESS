@@ -401,6 +401,72 @@ ex)
 6.28
 
 
+The define form can also define a function. The difference is that define for a function definition is followed by an open parenthesis,
+
+> (define (circle-area r)
+    (* pi (* r r)))
+> (circle-area 10)
+- Number
+
+314.0
+
+we have been evaluating forms only in DrRacket’s bottom area, which is also known as the interactions area. Definitions normally go in the top area—which is known as the definitions area, naturally.
+
+
+(define (is-odd? x)
+  (if (zero? x)
+      #f
+      (is-even? (- x 1))))
+ 
+(define (is-even? x)
+  (if (zero? x)
+      #t
+      (is-odd? (- x 1))))
+      
+Click Run. The functions is-odd? and is-even? are now available in the interactions area:
+
+> is-odd?
+- (Number -> Boolean)
+
+#<procedure:is-odd?>
+
+> (is-odd? 12)
+- Boolean
+
+#f
+
+
+-------------------------read again below---------------------
+
+In our definitions of pi and tau, plait inferred that the newly defined names have type Number and that is-odd? has type (Number -> Boolean). Programs are often easier to read and understand if you write explicitly the type that would otherwise be inferred. Declaring types can sometimes help improve or localize error messages when Plait’s attempt to infer a type fails, since inference can other end up depending on the whole program.
+
+Declare a type for a constant by writing : followed by a type after the defined identifier:
+
+(define groceries : (Listof String) '("milk" "cookies"))
+Alternatively, you can declare an idenitifier’s type separate from its definition by using :.
+
+(groceries : (Listof String))
+(define groceries '("milk" "cookies"))
+The declaration can appear before or after the definition, as long as it is in the same layer of declarations as the definition. You can even have multiple type definitions for the same identifier, and the type checker will ensure that they’re all consistent.
+
+For a function, attach a type to an argument by writing square brackets around the argument name, :, and a type. Write the function’s result type with : and the type after the parentheses that group the function name with its arguments.
+
+(define (starts-milk? [items : (Listof String)]) : Boolean
+  (equal? (first items) "milk"))
+Or, of course, declare the type separately:
+
+(starts-milk? : ((Listof String) -> Boolean))
+(define (starts-milk? items)
+  (equal? (first items) "milk"))
+
+
+-------------------------read again avobe---------------------
+
+
+
+
+
+
 
 
 ###
