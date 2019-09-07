@@ -10,4 +10,6 @@ __1. Reading English__
 - 
 -
 
+__2. What you need for solving the problem as Computer Scientist__
 
+- if there's a problem for Combination, you would need about recursion, then find the function for recursion in that programming language.
