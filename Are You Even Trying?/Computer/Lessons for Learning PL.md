@@ -7,7 +7,7 @@
 __1. Reading English__
 
 - Read again and again before that article will be understandable.
-- 
+- okay
 -
 
 __2. What you need for solving the problem as Computer Scientist__
