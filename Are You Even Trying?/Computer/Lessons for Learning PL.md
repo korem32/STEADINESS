@@ -7,9 +7,14 @@
 __1. Reading English__
 
 - Read again and again before that article will be understandable.
-- okay
+- 
 -
 
 __2. What you need for solving the problem as Computer Scientist__
 
 - if there's a problem for Combination, you would need about recursion, then find the function for recursion in that programming language.
+
+__3. The Words for Computer Science__
+
+- https://na27.tistory.com/230
+- 
