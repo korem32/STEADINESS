@@ -19,16 +19,16 @@ __2. 기본적인 수학 개념을 공부한다.__
 
 
 
-### Understanding Baisc Concepts
+### 1. Understanding Baisc Concepts
 
 
 
 
-### Examples to know yourself if you understood or you didn't
+### 2. Examples to know yourself if you understood or you didn't
 
 
 
 
-### applying to Computer Science
+### 3. applying to Computer Science
 
 
